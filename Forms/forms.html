@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+
+    <form method="post">
+
+        <h1>Create an Account</h1>
+        <p class="description">Please fill in your information below.</p>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="row">
+                <div class="field">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName"
+                        placeholder="Enter first name" required>
+                </div>
+
+                <div class="field">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName"
+                        placeholder="Enter last name" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <div class="field">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username"
+                    placeholder="Enter username" required>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password"
+                        placeholder="Enter password" required>
+                </div>
+
+                <div class="field">
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" name="confirm" id="confirm"
+                        placeholder="Confirm password" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <p>Age Group:</p>
+
+                <div class="options">
+                    <input type="radio" name="age" id="age1" value="1">
+                    <label for="age1">21-30</label>
+
+                    <input type="radio" name="age" id="age2" value="2">
+                    <label for="age2">31-40</label>
+
+                    <input type="radio" name="age" id="age3" value="3">
+                    <label for="age3">41+</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <p>Interests:</p>
+
+                <div class="options">
+                    <input type="checkbox" name="interests"
+                        id="interest1" value="1">
+                    <label for="interest1">Gaming</label>
+
+                    <input type="checkbox" name="interests"
+                        id="interest2" value="2">
+                    <label for="interest2">Music</label>
+
+                    <input type="checkbox" name="interests"
+                        id="interest3" value="3">
+                    <label for="interest3">Sports</label>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <div class="row">
+                <div class="field">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email"
+                        placeholder="Enter email" required>
+                </div>
+
+                <div class="field">
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber"
+                        placeholder="Enter phone number" required>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Settings</legend>
+
+            <div class="field">
+                <label for="accountType">Account Type:</label>
+
+                <select name="accountType" id="accountType" required>
+                    <option value="" disabled selected>
+                        Select an account
+                    </option>
+                    <option value="1">User</option>
+                    <option value="2">Admin</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="bio">Bio:</label>
+                <textarea name="bio" id="bio" rows="4"
+                    placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+        </fieldset>
+
+        <div class="buttons">
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
